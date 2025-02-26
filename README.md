@@ -1,6 +1,6 @@
 # Secure-Password-Manager
 ### I. INTRODUCTION
-In today’s digital age, every user manages multiple online accounts on various platforms, each of which requires a unique, complex password to ensure security. Remembering these unique credentials for every account can  be challenging, often leading to the risky practice of using the same password across multiple platforms. Password managers offer a practical solution, providing a secure vault to store and manage multiple passwords  hile generating unique, strong credentials for each account. However, while many popular password managers exist, they often rely on cloud-based storage solutions, which can pose additional risks if users’ sensitive  information is not adequately secured. This project addresses these risks by offering a locally hosted, secure password manager that leverages robust encryption methods to protect user credentials and improve ease of  access through an autofill feature. This password manager is designed with a focus on security and user convenience, employing cryptographic methods such as Argon2 hashing and Fernet encryption to safeguard stored data. A master password is required for access, and only authorized users with this password can retrieve and decrypt stored credentials. The manager also provides a session timeout feature to protect sensitive information  from unauthorized access during periods of inactivity, along with clipboard management to prevent data leakage after password autofill. Through these features, this project aims to deliver a practical, secure solution for managing passwords while enhancing the user experience by automatically populating login fields in web applications. 
+In today’s digital age, every user manages multiple online accounts on various platforms, each of which requires a unique, complex password to ensure security. Remembering these unique credentials for every account can  be challenging, often leading to the risky practice of using the same password across multiple platforms. Password managers offer a practical solution, providing a secure vault to store and manage multiple passwords  hile generating unique, strong credentials for each account. However, while many popular password managers exist, they often rely on cloud-based storage solutions, which can pose additional risks if users’ sensitive  information is not adequately secured. This project addresses these risks by offering a locally hosted, secure password manager that leverages robust encryption methods to protect user credentials and improve ease of  access through an autofill feature. This password manager is designed with a focus on security and user convenience, employing cryptographic methods such as Argon2 hashing and Fernet encryption to safeguard stored data. A master password is required for access, and only authorized users with this password can retrieve and decrypt stored credentials. The manager also provides a session timeout feature to protect sensitive information  from unauthorized access during periods of inactivity, along with clipboard management to prevent data leakage after password autofill. Through these features, this project aims to deliver a practical, secure solution for managing passwords while enhancing the user experience by automatically populating login fields in web applications. 
 
 ## II. REQUIREMENTS FOR THE PASSWORD MANAGER SYSTEM
 ### A. Project Goals
@@ -28,19 +28,7 @@ offline data storage to prevent exposure to server-based risks. Additionally, fe
 
 ### IV. SYSTEM DESIGN
 ## A. System Overview
-The password manager is designed to securely store and
-manage user credentials while offering an autofill feature
-that streamlines the login process. The primary functions of
-the system include credential encryption, secure storage, user
-authentication, and clipboard management to protect sensitive
-information. This system operates locally, ensuring data is
-stored securely without reliance on external servers, thereby
-reducing risks associated with cloud storage breaches. The
-primary components of the system are the Flask-based backend, a cryptographically secure database file, and a web-based
-user interface. The Flask server facilitates communication
-between the user interface and the encrypted local storage,
-while cryptographic libraries manage encryption and hashing
-processes to ensure data confidentiality and integrity.
+The password manager is designed to securely store and manage user credentials while offering an autofill feature that streamlines the login process. The primary functions of the system include credential encryption, secure storage, user authentication, and clipboard management to protect sensitive information. This system operates locally, ensuring data is stored securely without reliance on external servers, thereby reducing risks associated with cloud storage breaches. The primary components of the system are the Flask-based backend, a cryptographically secure database file, and a web-based user interface. The Flask server facilitates communication between the user interface and the encrypted local storage, while cryptographic libraries manage encryption and hashing processes to ensure data confidentiality and integrity.
 
 ## B. Architecture Diagram
 Fig. 1. Flowchart of Secure Password Manager This flowchart illustrates the main functionalities of the Secure Password Manager, a system designed to securely store, retrieve, and manage user credentials in an encrypted
